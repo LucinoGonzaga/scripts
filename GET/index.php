@@ -1,13 +1,17 @@
 <?php
 
 //Aqui definimos as variáveis com os valores que desejamos enviar
-$id = "10";
-$nome = "Nome";
-$fone = "(99) 9999-9999";
+$dado['1'] = crypt("10");
+$dado['2'] = "Lucino";
+$dado['3'] = "lucino2@gmail.com";
  
 //variável Array responsável por agrupar os dados a serem enviados
-$dados = array("id"=>$id,"nome"=>$nome,"fone"=>$fone);
+$dados = array($dado['1'],$dado['2'],$dado['3']);
  
+echo "<pre>";
+var_dump($dados);
+echo "</pre>";
+
 //URL para onde vai ser enviado nosso POST
 $url = "http://www.lucino.com.br/recebe.php";
  
