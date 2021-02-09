@@ -53,23 +53,6 @@ Comandos para o Github
 	git push
 
 =============================================================================
-Cursos do professor professor Guilherme Ferreira
-=============================================================================
-Aula 2 - Instalação e configuração:
-Um dos arquivos principais é o .env onde define o banco de dados, configurações de e-mail.
-
-O arquivo .gitignore ignora o envio de alguns arquivos para a produção.
-Além disso, quando subir para a produção o arquivo que vai ficar valendo é o config/app.php
-
-Aula 3 - Estrutura do framework:
-No diretório principal do framework é o app onde será encontrado os models.
-No diretório http é encontrado o controllers.php que segue os parâmetros MVC.
-No diretório bootstrap é o local onde fica a inicialização do framework.
-No diretório public é onde o servidor vai exibir para o usuário.
-	
-Aula 5 - Artisan Console
-php artisan -V 		:	 visualizar versão do framework php
-=============================================================================
 Comandos para o Docker:
 =============================================================================
 # Visualiza os containers em execução
