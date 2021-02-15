@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+        Exemplo para seleciona um objeto
+        $('#nome')          - seleciona através do id na tag html
+        $('button')         - seleciona o elemento button
+        $('.botao')         - seleciona a classe botao
+        $('button#nome')   - seleciona o id nome que esteja dentro do elemento button
+        
+    -->
+
+<head>
+    <title>Aula 2 - Métodos de Carregamento e Inicialização</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        //Utilizado para carregar as funções antes de carregar os elementos do HTML.
+        $(document).ready(function () {
+            alert('Funcionou...');
+        });
+
+        //Utilizado para carregar somente após os elementos serem carregados.
+        $(window).load(function () {
+            alert('Elementos carregados...');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="nome">Essa é uma div nome.</div>
+    <p><button class="botao" id="botao_1" value="Esse é um botão"></button></p>
+    <p><button class="botao" id="botao_2" value="Esse é um botão"></button></p>
+    <p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    </p>
+    <img src="../img/image.jpg" />
+    <img src="../img/image2.jpg" />
+</body>
+
+</html>

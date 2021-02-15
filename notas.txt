@@ -1,0 +1,34 @@
+# ###########################################################################
+# Esse é um arquivo pessoal onde irei registrar alguns comandos importantes #
+# ###########################################################################
+
+
+=============================================================================
+Comandos para o Github
+=============================================================================
+1º Criei o repositório no Github, atribui o tipo de licença e configurei o gitignore.
+2º Executei os comandos no meu computador:
+	git clone https://github.com/LucinoGonzaga/curso_laravel_5.3.git
+	git status
+	git add .
+	git commit -m “mensagem necessária”
+	git status
+	git push
+
+=============================================================================
+Comandos para o Docker:
+=============================================================================
+# Visualiza os containers em execução
+sudo docker container ls
+
+# Inspeciona os dados de um container (ip, mac, portas)
+docker container inspect 5e7a935fc552
+
+# Realiza o acesso ao terminal do container
+sudo docker exec -it 5e7a935fc552 bash
+
+# Reiniciar os container
+docker-compose restart
+
+# Após mudar a versão do PHP executar
+sudo docker-compose build --no-cache php-fpm
