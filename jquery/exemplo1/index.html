@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Exemplo para desabilitar campos</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$("#campo").ready(function (){
+		// desabilitando o campo 
+    
+    // forma 1 - jQuery 1.5-
+		$('#campo, #campo2').attr("disabled", true);
+    
+    // forma 2 - jQuery 1.6+
+    //$('#campo').prop('disabled', true);
+    
+		// mudando a cor do campo
+    $('#campo, #campo2').css("background-color", "#cccccc"); 
+	});
+</script>
+</head>
+<body>
+
+Entre com os dados:
+<input type="text" id="campo" name="campo">
+<input type="text" id="campo2" name="campo2"> 
+<a href="#" id="disable">Desabilitar campo</a>
+
+
+</body>
+</html>
