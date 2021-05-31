@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Ramais</title>
+<title>Pesquisa de ramais</title>
 <script src="jquery-1.7.2.min.js"></script>
 <script type="text/javascript" charset="utf-8" language="javascript" src="jquery.dataTables.js"></script>
 <script type="text/javascript" charset="utf-8" language="javascript" src="DT_bootstrap.js"></script>
