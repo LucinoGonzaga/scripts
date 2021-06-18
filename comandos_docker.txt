@@ -1,0 +1,17 @@
+=============================================================================
+Comandos para o Docker:
+=============================================================================
+# Visualiza os containers em execução
+sudo docker container ls
+
+# Inspeciona os dados de um container (ip, mac, portas)
+docker container inspect 5e7a935fc552
+
+# Realiza o acesso ao terminal do container
+sudo docker exec -it 5e7a935fc552 bash
+
+# Reiniciar os container
+docker-compose restart
+
+# Após mudar a versão do PHP executar
+sudo docker-compose build --no-cache php-fpm

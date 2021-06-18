@@ -1,8 +1,8 @@
 <?php
 
 $nome = 'Lucino Gonzaga';
-$email = 'lucino2@gmail.com';
-$senha = 'abc123';
+$email = 'noreply@dominio.com.br';
+$senha = 'secret';
 
 require_once "email.php";
 $enviar = new Email();

@@ -1,18 +1,13 @@
-# ###########################################################################
-# Esse é um arquivo pessoal onde irei registrar alguns comandos importantes #
-# ###########################################################################
-
-
 =============================================================================
 Comandos para o Github
 =============================================================================
 ############### Ambiente de desenvovlimento ############### 
 
 # Criar diretório do projeto:		mkdir projeto...
-# Clonar o projeto:			git clone https://github.com/LucinoGonzaga/curso_laravel_5.3.git
-# Mudar para branch MAIN: 		git checkout main
+# Clonar o projeto:                 git clone https://github.com/LucinoGonzaga/curso_laravel_5.3.git
+# Mudar para branch MAIN:           git checkout main
 # Atualizar branch MAIN:			git pull origin master
-# Criar branch:				git checkout -b qualquer-nome
+# Criar branch:                     git checkout -b qualquer-nome
 
 # Exibir modificações			git status
 # Adicionar alterações			git add nome_do_arquivo
@@ -51,21 +46,3 @@ Comandos para o Github
 # Atualize branch MASTER: 		git pull origin master
 # Visualize as tags: 			git tag -n
 # Adicione uma nova tag:		git tag -a vX.X.X -m "mantis-0000"
-
-=============================================================================
-Comandos para o Docker:
-=============================================================================
-# Visualiza os containers em execução
-sudo docker container ls
-
-# Inspeciona os dados de um container (ip, mac, portas)
-docker container inspect 5e7a935fc552
-
-# Realiza o acesso ao terminal do container
-sudo docker exec -it 5e7a935fc552 bash
-
-# Reiniciar os container
-docker-compose restart
-
-# Após mudar a versão do PHP executar
-sudo docker-compose build --no-cache php-fpm
