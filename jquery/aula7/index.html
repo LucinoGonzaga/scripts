@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Teste com select</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+<script>
+$('select #ex1 option:first')
+.css('backgroundColor', 'red') // primeira opção com fundo na cor vermelha
+
+$('select #ex1 option:last')
+.css('backgroundColor', 'green') // última opção com fundo na cor verde
+
+$('select #ex1 option:eq(5)') // método um
+.css('backgroundColor', 'blue') // sexta opção com fundo na cor azul
+
+$('select #ex1 option').eq(7) // método dois
+.css('backgroundColor', 'pink') // oitava opção com fundo na cor rosa
+</script>
+</head>
+<body>
+<select id="ex1" name="exemplo-um">
+<option  value="opcao-um">Primeira opção</option>
+<option  value="opcao-dois">Segunda opção</option>
+<option  value="opcao-tres">Terceira opção</option>
+<option  value="opcao-quatro">Quarta opção</option>
+<option  value="opcao-cinco">Quinta opção</option>
+<option  value="opcao-seis">Sexta opção</option>
+<option  value="opcao-sete">Sétima opção</option>
+<option  value="opcao-oito">Oitava opção</option>
+<option  value="opcao-nove">Nona opção</option>
+<option  value="opcao-dez">Décima opção</option>
+<option  value="default" selected="selected">Opção default</option>
+</select>
+
+</body>
+</html>
