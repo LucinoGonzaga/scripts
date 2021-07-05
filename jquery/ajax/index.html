@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Trabalhando com ajax</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+        <script type="text/javascript">
+    $(document).ready(function() {
+        $('#txtNome').on('blur', function(e) { //Evento que chamará a ação. Pode ser substituída por o "blur" por "change"
+            e.preventDefault(); //tira a função defaul, que seria um submit ou ir para um link no caso de <a>.
+            $.ajax({
+                type: "POST",
+                async: false,
+		dataType: 'json',
+                url: 'acao.php',
+                data: {acao: 'Ativar', id: '1516'},
+                success: function(data) {
+                    $('#result').html(data.result); //altera o conteudo da div result trazido pelo AJAX
+                },
+                error: function(error) {
+                    $('#result').html(error.responseText);
+                }
+            });
+        });
+    });
+</script>
+    </head>
+    <body>
+        <div>
+            <input type="text" id="txtNome" name="txtNome">
+            <div id="result"></div>
+        </div>
+    </body>
+</html>                
+         
